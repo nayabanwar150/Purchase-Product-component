@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Assignment</title>
+</head>
+<body>
+    <!-- Nav -->
+    <nav>
+        <div class="nav-title">
+            <h1>Shopping Assignment</h1>
+        </div>
+    </nav>
+
+    <!-- Shopping main item -->
+    <section id="main-item">
+        <div class="container-main">
+            <div class="main-img">
+                <img src="./img/main-item.png" alt="AASHIRVAAD ATTA" >
+            </div>
+            <div class="main-details">
+                <h3 class="heading">Ashirvaad Atta - White Wheat, 10 kg Pouch</h3>
+                <p class="price">Rs <span id="Price">399</span> </p>
+                <div class="pack-sizes">
+                    <p>Pack sizes</p>
+                    <a class="pack-size-10kg active" onclick="reSelect()"><p>10kg <br>Rs 399</p> <button style="display: none;" value="399"></button></a>
+                    <a class="pack-size-5kg" onclick="select()"><p>5kg <br>Rs 209</p> <button style="display: none;" value="209"></button></a>
+                </div>
+                <p class="quantity">Quantity</p>
+                <div class="quantity-button">
+                    <input type="submit" id="minus" value="-" onclick="minus()">
+                    <span id="number">1</span>
+                    <input type="submit" id="plus" value="+" onclick="plus()">
+                </div>
+                <div class="amount-button"><button>Payable</button> =  Rs <span id="amount"> 399</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shopping sub item -->
+    <section>
+        <div class="container-sub">
+            <div class="big-item">
+                <div class="big-item-img">
+                    <img src="./img/sub-item.png" alt="">
+                    <div class="name-box"><p>Masala, Spices & Cooking paste</p></div>
+                </div>
+            </div>
+            <div class="small-items">
+               <div class="small-items-container">
+                <div class="items">
+                    <img src="./img/item-1.png" alt="">
+                    <div class="name-box"><p>Atta & Flour</p></div>
+                </div>
+                <div class="items">
+                    <img src="./img/item-2.png" alt="">
+                    <div class="name-box"><p>Rice & Rice Products</p></div>
+                </div>
+                <div class="items">
+                    <img src="./img/item-3.png" alt="">
+                    <div class="name-box"><p>Dal & Pulses</p></div>
+                </div>
+                <div class="items">
+                    <img src="./img/item-4.png" alt="">
+                    <div class="name-box"><p>Cooking Oils</p></div>
+                </div>
+               </div>
+            </div>
+        </div>
+    </section>
+    <br><br><br>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
